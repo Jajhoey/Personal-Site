@@ -1,0 +1,40 @@
+h1 {
+  color: black;
+  margin-top: 50px;
+  display: block;
+  text-align: center;
+
+}
+
+body {
+  background-image: url("/assets/images/background.jpg");
+  object-fit: contain;
+}
+
+.aboutMe{
+  text-align: left;
+  font-size: 20pt;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 10%;
+  font-weight: bold;
+}
+
+div > img{
+  border-radius: 50%;
+}
+
+.nav-item:hover{
+  background-color: grey;
+  border-radius: 10px;
+}
+
+.nav-link {
+  color: white;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-column-gap: 50px; 
+}
