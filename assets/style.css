@@ -1,4 +1,4 @@
-h1 {
+div>h1 {
   color: black;
   margin-top: 50px;
   display: block;
@@ -9,6 +9,7 @@ h1 {
 body {
   background-image: url("/assets/images/background.jpg");
   object-fit: contain;
+  background: 0,0,0,.3;
 }
 
 .aboutMe{
@@ -42,18 +43,69 @@ body {
 
 .footer{
   text-align: center;
+  margin-left: 50%;
+  margin-right: 50%;
 }
 
-.footer>.grid-item{
+.grid-item1 {
+  grid-area: header;
+}
 
+.grid-item2{
+  margin-top: 50px;
+  margin-left: 30%;
+  margin-bottom: 30px;
+  grid-area: left-h;
+}
+
+.grid-item3 {
+  grid-area: left;
+  margin-left: 30%;
+
+}
+
+.grid-item4 {
+  grid-area: left;
+  margin-top: 50px;
+  margin-left: 30%;
+
+}
+
+.grid-item5 {
+  margin-top: 50px;
+  grid-area: right;
+
+}
+
+.grid-item6 {
+  grid-area: right;
+
+}
+
+.grid-item7{
+  padding-top: 50px;
+  margin-left: 30%;
+  margin-bottom: 30px;
+  grid-area: left-h;
 }
 
 .grid-item>p{
   padding-top: 25%;
 }
 
+.grid-container>div{
+  color: black;
+  font-size: 14pt;
+
+}
+
 .grid-container{
   display: grid;
-  grid-template-columns: auto auto auto;
   grid-column-gap: 50px;
+  grid-template-areas:
+    'header header header header'
+    'left-h left-h right-h right-h'
+    'left left right right'
+    'footer footer footer footer';
+
 }
