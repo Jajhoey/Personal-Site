@@ -16,9 +16,12 @@ body {
   text-align: left;
   font-size: 16pt;
   margin-left: 20%;
-  margin-right: 20%;
   margin-top: 10%;
   font-weight: bold;
+}
+
+.aboutMe>div>p{
+  padding-top: 20%;
 }
 
 .myPhoto > img{
@@ -53,10 +56,11 @@ body {
 
 .grid-item2{
   margin-top: 50px;
-  margin-left: 30%;
+  margin-left: 20%;
   margin-bottom: 30px;
   grid-area: left-h;
 }
+
 
 .grid-item3 {
   grid-area: left;
@@ -66,31 +70,24 @@ body {
 
 .grid-item4 {
   grid-area: left;
-  margin-top: 50px;
-  margin-left: 30%;
+  margin-top: 150px;
+  padding-left: 30%;
 
 }
 
 .grid-item5 {
-  margin-top: 50px;
   grid-area: right;
 
 }
 
 .grid-item6 {
+  margin-top: 150px;
   grid-area: right;
 
 }
 
-.grid-item7{
-  padding-top: 50px;
-  margin-left: 30%;
-  margin-bottom: 30px;
-  grid-area: left-h;
-}
-
-.grid-item>p{
-  padding-top: 25%;
+.item-info{
+  padding-right: 15%;
 }
 
 .grid-container>div{
