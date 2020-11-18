@@ -7,14 +7,24 @@
     <link rel="stylesheet" type="text/css" href="/assets/style.css">
     <nav class = "navbar navbar-expand-sm bg-dark fixed-top">
       <ul class = "navbar-nav">
-        <li class = "nav-item"><a class = "nav-link" href="/">Home</a>
-        <li class = "nav-item"><a class = "nav-link active font-weight-bold" href="/about">Skills/Relevant Courses</a></li>
+        <li class = "nav-item"><a class = "nav-link font-weight-bold" href="/">Home</a>
+        <li class = "nav-item">
+          <div class="dropdown">
+            <button class="nav-link active drop-button">Skills/Education</button>
+            <div class="dropdown-content">
+              <a class = "" href="/about">Technical Skills</a>
+              <a class = "" href="/about">Relevant Courses</a>
+              <a class = "" href="/about">Education</a>
+            </div>
+          </div>
+        </li>
         <li class = "nav-item"><a class = "nav-link" href="/projects">Personal Projects</a></li>
       </ul>
     </nav>
   </head>
 
   <body>
+
     <div class="grid-container">
       <div class="grid-item1"><h1>Skills/Relevant Courses</h1></div>
       <div class="grid-item2"><h3><b>Technical Skills</b></h3></div>
@@ -23,6 +33,7 @@
       <div class="grid-item5"><p><b>Tools:</b> Git, Eclipse, Atom, Violet UML Editor</p> </div>
       <div class="grid-item6"><p><b>Databases:</b> SQL, MongoDB</p></div>
     </div>
+
     <div class="grid-container">
       <div class="grid-item2"><h3 class="font-weight-bold">Courses</h3></div>
       <div class="grid-item3"><p class="font-weight-bold">Advanced Database Structures</p>
@@ -39,7 +50,12 @@
         <p class="item-info">Programmed in Python using MongoDB to handle data.
            Gained experience in using Flask and Pymongo APIs.</p>
       </div>
+    </div>
 
+
+    <div class="grid-container">
+      <div class="grid-item2"><h3 class="font-weight-bold">Education</h3></div>
+      <div class="grid-item3"> <p>St. John's University, Queens, NY</p> </div>
     </div>
 
   </body>

@@ -12,6 +12,10 @@ body {
   background: 0,0,0,.3;
 }
 
+a:hover{
+  color: white;
+}
+
 .aboutMe{
   text-align: left;
   font-size: 16pt;
@@ -31,11 +35,49 @@ body {
 
 .nav-item:hover{
   background-color: grey;
-  border-radius: 10px;
+  border-radius: 10px 10px 10px 0px;
 }
 
 .nav-link {
   color: white;
+
+}
+
+.dropdown{
+  position:relative;
+  display: inline-block;
+}
+
+
+.dropdown:hover > .dropdown-content{
+  display: block;
+  background-color: #343a40;
+
+}
+
+.drop-button{
+  border: none;
+  background-color: inherit;
+  color: white;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  border-radius: 0px 0px 10px 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width:110%;
+}
+
+.dropdown-content>a{
+  color: white;
+  display: block;
+}
+
+.dropdown-content:hover>a{
+  border-radius: 0px 0px 10px 10px;
+
 }
 
 .footer>a>img{
@@ -83,7 +125,6 @@ body {
 .grid-item6 {
   margin-top: 150px;
   grid-area: right;
-
 }
 
 .item-info{
@@ -93,7 +134,6 @@ body {
 .grid-container>div{
   color: black;
   font-size: 14pt;
-
 }
 
 .grid-container{
@@ -104,5 +144,4 @@ body {
     'left-h left-h right-h right-h'
     'left left right right'
     'footer footer footer footer';
-
 }
